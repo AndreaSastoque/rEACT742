@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import NuevoElemento from './NuevoElemento';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+  </React.StrictMode>,
+  document.getElementById('root2')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <NuevoElemento />
   </React.StrictMode>,
   document.getElementById('root')
 );
