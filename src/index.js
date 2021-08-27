@@ -3,15 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import NuevoElemento from './NuevoElemento';
 import Estudiante from './Estudiante';
+import Header from './Header';
+import Footer from './Footer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Estudiante  edad = "23" genero = "F"/>
+    <Header />
   </React.StrictMode>,
-  document.getElementById('root2')
+  document.getElementById('header')
 );
+
+ReactDOM.render(
+  <Footer />,
+  document.getElementById('footer')
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
