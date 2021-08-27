@@ -1,10 +1,19 @@
 import React from 'react';
 
-const NuevoElemento = () => (
+let estudiante = {
+    nombre: "maria",
+    edad: 23
+};
+
+var color = "azul";
+
+const NuevoElemento = (props) => (
     <div className="contendeor">
-        <h3>Titulo nuevo componente</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque assumenda sint totam, nostrum tenetur voluptate laboriosam labore ratione et odio ea quisquam officiis soluta, temporibus quasi! Neque ad rem eum!</p>
+        <h3>Estudiante</h3>
+        <h4>{ props.nombre }</h4>
+        <p>Edad: { estudiante.edad } </p>
+        <span>{ color }</span>
     </div>
 )
 
-export default NuevoElemento;
+export default NuevoElemento; 

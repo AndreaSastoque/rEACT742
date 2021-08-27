@@ -4,19 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NuevoElemento from './NuevoElemento';
+import Estudiante from './Estudiante';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Estudiante  edad = "23" genero = "F"/>
   </React.StrictMode>,
   document.getElementById('root2')
-);
-
-ReactDOM.render(
-  <React.StrictMode>
-    <NuevoElemento />
-  </React.StrictMode>,
-  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
