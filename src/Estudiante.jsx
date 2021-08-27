@@ -8,7 +8,7 @@ const Estudiante = ({nombre, edad, genero}) => (
                 {nombre}
             </h5>
             <p className="card-text">Edad: {edad}.</p>
-            <p className="card-text">Edad: {genero}.</p>
+            <p className="card-text">Genero: {genero}.</p>
         </div>
     </div>
 );
